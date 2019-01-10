@@ -1,0 +1,35 @@
+ul {
+	border: 1px solid red;
+	border-radius: 5px;
+	list-style: none;
+	padding: 0;
+	max-width: 25rem;
+}
+li + li {
+	border-top: 1px solid #ccc;
+}
+li {
+	padding-left: 1.5rem;
+	position: relative;
+	line-height: 1.6rem;
+	
+}
+li.completed {
+	text-decoration: line-through;
+}
+li.completed:before {
+	position: absolute;
+	content: "\2714";
+	color: green;
+	left: .4rem;
+}
+button.remove {
+	display: none;
+	position: absolute;
+	right: .5rem;
+	top: .15rem;
+
+}
+li.completed button.remove {
+	display: inline;
+}
